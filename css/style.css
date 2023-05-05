@@ -2,6 +2,31 @@
 /*Импорт цветов*/
 /*Импорт интерфейса*/
 /*Импорт секции payment*/
+* {
+  box-sizing: border-box;
+}
+
+.hero-text {
+  color: #1C1C21;
+  font-family: "Muller";
+  font-style: normal;
+  flex-basis: 50%;
+}
+.hero-text__subtitle {
+  margin-top: 34px;
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 140%;
+  opacity: 0.8;
+}
+.hero-img {
+  flex-basis: 50%;
+}
+.hero-img__shutter {
+  max-width: 100%;
+}
+
 .advantage {
   font-family: "Muller";
   color: #1C1C21;
@@ -559,6 +584,73 @@
   color: #1C1C21;
 }
 
+.file-label:after {
+  text-align: center;
+  max-width: 370px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  display: block;
+  width: 100%;
+  height: calc(3.5em + 0.75rem);
+  padding: 1.375rem 3.75rem;
+  line-height: 1.5;
+  color: #495057;
+  content: "Прикрепить файл";
+  background-color: #F9F9F9;
+  border-left: inherit;
+  border-radius: 0 0.25rem 0.25rem 0;
+  border: 1px dashed #DCDCDC;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 1.4rem 0rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: none;
+  border-bottom: 1px solid #D9D9D9;
+  background-color: #F9F9F9;
+}
+.form-input-message {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 4.75rem + 2px);
+  padding: 1rem 0rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: none;
+  border-bottom: 1px solid #D9D9D9;
+  background-color: #F9F9F9;
+}
+
+.btn-call {
+  background: #900B7B;
+  width: 100%;
+  padding: 1.375rem 6.75rem;
+  border: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 140%;
+}
+.btn-call__top {
+  max-width: 330px;
+  padding: 1.375rem 1.75rem;
+}
+
 /*.main-content
  * font-family: "Rajdhani"
  * background-color: #1A1C28
@@ -919,6 +1011,9 @@
   }
 }
 @media (max-width: 991px) {
+  .hero-block {
+    flex-direction: column;
+  }
   .button-main__transparently {
     margin-left: 0px;
     margin-top: 20px;
