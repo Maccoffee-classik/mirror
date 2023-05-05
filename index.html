@@ -14,7 +14,29 @@
 
 <body>
 
+	<section class="hero">
+		<div class="container">
+			<div class="hero-block d-flex align-items-center">
+				<div class="hero-text">
 
+					<h1 class="hero-text__title mb-4">Уникальные зеркала<br>для самых ярких интерьеров
+						</h1>
+					<span class="hero-text__subtitle">Работаем с дизайнерами и архитекторами, предлагая индивидуальные решения и выгодные условия сотрудничества
+					</span>	
+					<button type="" class="btn-call btn-call__top float-left mt-4" disabled="disabled">Сотрудничать с нами</button>
+					
+					<!-- /.hero-list -->
+				</div>
+				<!-- /.hero-text -->
+				<div class="hero-img">
+					<img src="./img/first-slider.png" alt="shutter" class="hero-img__shutter">	
+				</div>
+				<!-- /.hero-img -->
+			</div>
+			<!-- /.hero-block -->
+		</div>
+		<!-- /.container -->
+	</section>
 
 
 	
@@ -413,6 +435,92 @@
 					<div class="col-lg-8  ">
 						<div class="call-back__send-form">
 							<div class="send-form__title">Напишите нам</div>
+								<!-- Форма обратной связи -->
+				<form id="feedbackForm" action="process/process.php" enctype="multipart/form-data" novalidate>
+					<div class="form-row">
+						<div class="col-sm-6">
+							<!-- Имя пользователя -->
+							<div class="form-group mr-4">
+								<label for="name" class="control-label">Имя</label>
+								<input id="name" type="text" name="name" class="form-input" value="" placeholder="Введите Ваше Имя" minlength="2"
+									maxlength="30" required="required">
+								<div class="invalid-feedback"></div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<!-- Email пользователя -->
+							<div class="form-group ">
+								<label for="email" class="control-label">Email</label>
+								<input id="email" type="email" name="Email-адрес" required="required" class="form-input" value=""
+									placeholder="Email-адрес">
+								<div class="invalid-feedback"></div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="form-row">
+						<div class="col-sm-6">
+							<!-- Номер -->
+							<div class="form-group mr-4">
+								<label for="phone" class="control-label">Номер</label>
+								<input id="phone" type="tel" name="tel" class="form-input" value="" placeholder="7 (___) ___-__-__" minlength="2"
+									maxlength="30" required="required">
+								<div class="invalid-feedback"></div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<!-- Email пользователя -->
+							<div class="form-group attachments">
+								<div class="mb-3">Рассчёт/консультация готового проекта					</div>
+								
+								
+								<div class="custom-file">
+									<input type="file" name="attachment[]" class="custom-file-input" id="customFile1">
+									<label class="file-label" for="customFile1"></label>
+									<div class="invalid-feedback"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-row align-items-end">
+						<div class="col-sm-6">
+							<!-- сообщение -->
+							<div class="form-group mr-4">
+								<label for="message" class="control-label">Комментарий</label>
+								<textarea id="message" name="message" class="form-input-message" rows="3"
+									placeholder="Введите текст сообщения" minlength="20" maxlength="500"
+									required="required"></textarea>
+								<div class="invalid-feedback"></div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<!-- Email пользователя -->
+							<button type="submit" class="btn-call float-right mb-3" disabled="disabled">Связаться</button>
+						</div>
+					</div>
+
+					<!-- Сообщение пользователя -->
+			
+					<!-- Изображения -->
+				
+					<!-- Капча 
+					<div class="form-group captcha">
+						<img class="img-captcha" src="captcha/captcha.php" data-src="captcha/captcha.php">
+						<div class="btn btn-light refresh-captcha">Обновить</div>
+						<div class="form-group">
+							<label for="captcha" class="control-label">Код, показанный на изображении</label>
+							<input type="text" name="captcha" maxlength="6" required="required" id="captcha"
+								class="form-control captcha" placeholder="******" autocomplete="off" value="">
+							<div class="invalid-feedback"></div>
+						</div>
+					</div> -->
+			
+	
+					<!-- Кнопка для отправки формы -->
+					
+				</form>
 						</div>	
 					
 					</div>
