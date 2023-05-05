@@ -52,3 +52,16 @@ $('.select').each(function() {
         }
     });
 });
+
+function initFaqTitle() {
+    $('.faq-title').unbind('click');
+    $('.faq-title').click(function(r){
+       r.preventDefault(); 
+    $('.faq-content-text').not($(this).siblings('.faq-content-text')).slideUp(); 
+    $('.faq-content-li').not($(this).parents('.faq-content-li')).removeClass('active'); 
+    $(this).siblings('.faq-content-text').slideToggle();
+    $(this).parents('.faq-content-li').toggleClass('active');
+    });
+ };
+
+initFaqTitle();
