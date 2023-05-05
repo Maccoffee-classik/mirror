@@ -367,6 +367,198 @@
   height: 14px;
 }
 
+/*СТИЛИ FAQ*/
+.faq {
+  color: #1C1C21;
+  font-family: "Muller";
+  font-style: normal;
+  padding-bottom: 130px;
+}
+.faq__title {
+  padding-left: 100px;
+  padding-top: 138px;
+  padding-bottom: 35px;
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 135%;
+}
+
+.faq-content ul {
+  list-style-type: none;
+  padding: 0;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.faq-title {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  text-align: left;
+  cursor: pointer;
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 135%;
+  color: #1C1C21;
+}
+
+.faq-title p {
+  width: 92%;
+  margin: 0;
+  padding-left: 40px;
+}
+
+.faq-content-li {
+  border-top: 1px solid #D6D6D6;
+  border-bottom: 1px solid #D6D6D6;
+  padding: 30px 0;
+}
+
+.faq-content-text {
+  max-width: 800px;
+  padding-top: 26px;
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #1C1C21;
+  opacity: 0.8;
+  padding-left: 66px;
+}
+
+.faq-content-li:not(.active) .faq-content-text {
+  display: none;
+}
+
+.faq-title svg {
+  margin-top: 10px;
+}
+
+.faq-content-li.active .faq-title svg {
+  fill: #900B7B;
+  color: #900B7B;
+  transform: rotate(45deg);
+  transition: transform 0.6s ease-in-out;
+}
+
+.faq-content-li.active .faq-title {
+  color: #900B7B;
+}
+
+.faq-title:hover {
+  fill: #900B7B;
+  color: #900B7B;
+}
+
+.faq-content-li:not(.active) .footer-submenu-ul {
+  display: none;
+}
+
+/*СТИЛИ ФОРМА СВЯЗИ И КОНТАКТЫ*/
+.call-back {
+  background-image: url(" ../img/footer-bg.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  color: #1C1C21;
+  font-family: "Muller";
+  font-style: normal;
+  padding-bottom: 265px;
+}
+.call-back:last-child {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.call-back__title {
+  padding-left: 100px;
+  padding-bottom: 35px;
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 135%;
+}
+.call-back__subtitle {
+  padding-right: 100px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  opacity: 0.8;
+}
+.call-back__wrapper {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.call-back__send-form {
+  height: 566px;
+  background: #F9F9F9;
+  color: #1C1C21;
+  font-family: "Muller";
+  font-style: normal;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 76px;
+}
+.call-back__contacts {
+  background: #EFEFEF;
+  height: 566px;
+  color: #1C1C21;
+  font-family: "Muller";
+  font-style: normal;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 76px;
+}
+
+.send-form__title {
+  padding-bottom: 28px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 135%;
+}
+
+.contacts__title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 135%;
+  padding-bottom: 63px;
+}
+.contacts-list {
+  font-family: "Muller";
+  font-style: normal;
+  padding: 0;
+  list-style: none;
+  color: #1C1C21;
+}
+.contacts-list__text {
+  padding-left: 10px;
+}
+.contacts-list__text b {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 140%;
+  opacity: 0.8;
+  padding-left: 23px;
+}
+.contacts-list__link {
+  color: #1C1C21;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+}
+.contacts-list__email {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 140%;
+  text-decoration: underline;
+  color: #1C1C21;
+}
+
 /*.main-content
  * font-family: "Rajdhani"
  * background-color: #1A1C28
