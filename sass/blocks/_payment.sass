@@ -41,7 +41,18 @@
 		font-weight: 500
 		font-size: 70px
 		line-height: 140%
-		opacity: 0.1
+		color: #E9E9E9 
+		position: relative
+		&::before
+			content: url('../img/burst.png')
+			display: block
+			width: 32px
+			height: 32px
+			position: absolute
+			left: -3%
+			top: -8px
+			
+
 	&__title			
 		
 		padding-bottom: 12px
@@ -97,6 +108,15 @@
 		margin-left: 50px
 		padding-left: 130px
 		padding-right: 160px
+		position: relative
+		&::after
+			content: url('../img/arrow-1.png')
+			display: block
+			width: 15px
+			height: 15px
+			position: absolute
+			right: 10%
+			top: 37%
 		
 .offers
 	padding-top: 130px
@@ -579,7 +599,8 @@
 			border: none 
 			border-bottom: 1px solid #D9D9D9
 			background-color: #F9F9F9
-
+.button-group-slider
+	padding-left: 100px
 .btn-call
 	background: #900B7B
 	width: 	100%
@@ -589,9 +610,88 @@
 	font-weight: 500
 	font-size: 1rem
 	line-height: 140%
+	position: relative
+	&::after
+		content: url('../img/arrow-1.png')
+		display: block
+		width: 15px
+		height: 15px
+		position: absolute
+		right: 10%
+		top: 37%
+		
 	&__top
 		max-width: 330px
 		padding: 1.375rem 1.75rem
+.btn-slider-left
+	padding: 35px 65px
+	border: 1px solid #DCDCDC
+	background: transparent
+.arrow-2 div::after 
+	content: ''
+	position: absolute
+	width: 10px
+	height: 2px
+	top: 4px
+	right: 10px
+	background-color: #DCDCDC
+	transform: rotate(45deg)
+
+.arrow-2 div::before
+	content: ''
+	position: absolute
+	width: 10px
+	height: 2px
+	top: -4px
+	right: 10px
+	background-color: #DCDCDC
+	
+	transform: rotate(-45deg)
+.btn-slider-right
+	padding: 35px 55px
+	border: 1px solid #DCDCDC
+	background: transparent
+.arrow-1, .arrow-2
+	cursor: pointer
+	position: relative
+	width: 0
+	height: 0
+	margin: 0
+.arrow-1, .arrow-2 div
+	position: relative
+	top: 0
+	width: 20px
+	height: 2px
+	background-color: #DCDCDC
+	
+	left: 0
+	display: block
+.arrow-1 div::after 
+	content: ''
+	position: absolute
+	width: 10px
+	height: 2px
+	top: 4px
+	right: 0px
+	background-color: #DCDCDC
+	transform: rotate(-45deg)
+
+.arrow-1 div::before
+	content: ''
+	position: absolute
+	width: 10px
+	height: 2px
+	top: -4px
+	right: 0px
+	background-color: #DCDCDC
+	
+	transform: rotate(45deg)
+
+.arrow-1:hover 
+	animation: arrow-1 1s linear infinite
+
+
+
 /*.main-content
 	font-family: "Rajdhani"
 	background-color: #1A1C28
@@ -839,6 +939,105 @@
 
 .tab-content__text
 
+
+
+/* Слайдер */
+.service .container 
+	max-width: 1300px
+
+.specialist .container
+	max-width: 1300px
+
+.review .container
+	max-width: 1300px
+
+/* Ограничивающая оболочка */
+.service .slick-list 
+	max-width: 1160px
+	margin: auto
+	max-height: 1000px
+	overflow: hidden
+
+.specialist .slick-list
+	max-width: 1160px
+	margin: auto
+	max-height: 500px
+	overflow: hidden
+
+.slick-list 
+	max-width: 1160px
+	
+	max-height: 445px
+	overflow: hidden
+
+/* Лента слайдов */
+.slick-track
+	display: flex
+
+
+.slider1 
+	position: relative
+	min-width: 0
+	padding: 0 0
+
+/* Стрелки */
+.slider1 .slick-arrow 
+	position: absolute
+	bottom: -5%
+	z-index: 10
+	font-size: 0
+	padding: 35px 55px
+	border: 1px solid #DCDCDC
+	background: transparent
+
+
+
+.slider 
+	position: relative
+	min-width: 0
+	padding: 0 0
+/* Стрелки */
+.slider .slick-arrow
+	position: absolute
+	top:50%
+	z-index: 10
+	font-size: 0
+	width: 33px
+	height: 63px
+	border: none
+	margin: -33px 0 0 0
+
+/* Стрелка влево */
+.slick-arrow.slick-prev 
+	left:100px
+	background: url('../img/sl-arrow_l.svg') 50% 50% no-repeat
+
+
+/* Стрелка вправо */
+.slick-arrow.slick-next 
+	left: 250px
+	background: url('../img/sl-arrow_r.svg') 50% 50% no-repeat
+.slider1 .slick-dots
+	display: flex
+	align-items: center
+	justify-content: center
+	margin-top: 80px
+	li
+		list-style: none
+		margin: 0 10px
+		
+			
+	button
+		font-size: 0
+		width: 11px
+		height: 11px
+		background-color: #DCDCDC
+		border-radius: 50%
+		border: none
+.slider1 .slick-dots li.slick-active button
+	background-color:	#900B7B
+.slider_cart 
+	padding-bottom: 180px
 /*.description-list
 	font-size: 1.302vw
 	font-weight: 400
