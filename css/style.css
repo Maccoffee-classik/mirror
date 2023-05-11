@@ -1558,3 +1558,25 @@
     font-size: 3.042vw;
   }
 }
+.project-filter .slick-arrow.slick-prev {
+  display: none !important;
+  left: 100px;
+  background: url("../img/sl-arrow_l.svg") 50% 50% no-repeat;
+}
+@media (max-width: 991px) {
+  .project-filter .slick-arrow.slick-prev {
+    display: none !important;
+  }
+}
+
+/* Стрелка вправо */
+.project-filter .slick-arrow.slick-next {
+  display: none !important;
+  left: 250px;
+  background: url("../img/sl-arrow_r.svg") 50% 50% no-repeat;
+}
+@media (max-width: 991px) {
+  .project-filter .slick-arrow.slick-next {
+    display: none !important;
+  }
+}
